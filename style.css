@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body, html {
+    height: 100vh;
+} */
+
+.content {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 5fr;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #38BDF8;
+    grid-row: 1 / 3;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+.logo {
+    height: 80px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding-left: 16px;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.branding {
+    height: 150px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding-left: 16px;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation li, .branding li {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 2px 2px 5px black;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    padding: 4px 32px;
+    justify-items: left;
+}
+
+div.search, div.profile {
+    display: flex;
+    align-items: center;
+}
+
+div.profile {
+    justify-self: center;
+    display: flex;
+    gap: 16px;
+}
+
+div.profile img {
+    height: 25px;
+    width: 25px;
+}
+
+input[type="search"] {
+    appearance: none;
+    border-radius: 20px;
+    width: 600px;
+    height: 25px;
+    background-color: #CFFAFE;
+    border-style: none;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    justify-items: left;
+    padding: 4px 32px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+button {
+    appearance: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #0891B2;
+    border-style: none;
+    font-weight: 800;
+    color: white;
+}
+
+.main {
+    background-color: rgba(219, 218, 217, 0.688);
+    display: grid;
+    grid-template: 1fr 1fr / 3.25fr 1fr;
+    padding: 16px 12px 24px 0px;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 24px;
+}
+
+.hello img {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+}
+
+.hithere {
+    font-size: 0.8rem;
+}
+
+.name {
+    font-size:1.5rem;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin: 12px;
+    flex-grow: 1;
+}
+
+.projects .miniheader {
+    padding-left: 12px;
+}
+
+.miniheader {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.projects .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-left: solid orange 10px;
+    box-shadow: 1px 0px 10px rgb(34, 34, 34);
+}
+
+.title, .text {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.card .buttons {
+    display: flex;
+    align-items: center;
+    align-self: end;
+    margin-top: auto;
+    gap: 8px;
+    padding: 0px 8px 12px 0px;
+}
+
+.announcement, .trending {
+    padding-top: 16px; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 28px;
+}
+
+.announcement .cards {
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.announcement .card {
+    background-color: white;
+    height: 70px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px rgb(161, 160, 160) solid;
+}
+
+.trending .cards {
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    margin-top: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending .card {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
